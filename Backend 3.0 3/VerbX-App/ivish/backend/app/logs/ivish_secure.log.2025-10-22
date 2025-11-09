@@ -1,0 +1,566 @@
+[2025-10-22 19:55:43+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:55:43+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:23+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:23+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:48+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:48+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:15+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:15+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:58:17+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:58:17+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:08+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:08+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:27+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:27+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:47+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:47+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:24+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:24+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:52+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:52+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:01:32+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:01:32+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:13+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:13+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:03:20+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:03:20+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:04:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:04:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:05:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:07:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 20:07:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 21:25:56+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: name 'ObjectId' is not defined
+[2025-10-22 21:25:56+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: name 'ObjectId' is not defined
+[2025-10-22 21:27:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 21:27:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 21:39:42+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 21:39:42+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 21:40:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 21:40:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Wrong number of segments in token: b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+[2025-10-22 21:43:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-22 21:43:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-22 21:43:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:57+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:43:57+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:07+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:07+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:44:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:25+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:25+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:45+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:45+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:45:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:05+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:05+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:15+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:15+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:46:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:57+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:47:57+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:48:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:49:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:43+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:50:43+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:34+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:43+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:43+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:51:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:25+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:25+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:52:56+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:53:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:54+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:54:54+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:46+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:55:53+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:03+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:13+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:13+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:23+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:23+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:32+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:32+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:42+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:42+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:52+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:56:52+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:47+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:57:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:07+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:07+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:26+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:58:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:19+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:55+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 21:59:55+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:05+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:05+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:17+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:24+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:24+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:33+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:41+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:41+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:00:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:01+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:21+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:30+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:40+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:40+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:01:49+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:11+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:20+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:20+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:28+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:38+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:48+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:59+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:02:59+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:09+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:20+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:20+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:39+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:03:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:06+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:06+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:14+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:14+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:22+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:22+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:29+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:40+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:40+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:50+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:04:58+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:16+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:27+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:32+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:05:32+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:05:36+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:06:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:06:08+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:09:40+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:09:40+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:12:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:12:02+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:16:36+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:16:36+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:20:31+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:20:31+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:23:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:23:37+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Could not verify token signature.
+[2025-10-22 22:24:16+0530] INFO - Encrypted: Test log message
+[2025-10-22 22:24:32+0530] INFO - Encrypted: Test log message from user.py
+[2025-10-22 22:24:32+0530] INFO - Encrypted: Test log message from user.py
+[2025-10-22 22:26:08+0530] INFO - Encrypted: Backend JWT encoding is working correctly
+[2025-10-22 22:26:08+0530] INFO - Encrypted: Backend JWT encoding is working correctly
+[2025-10-22 22:32:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-22 22:32:12+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-22 22:33:02+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:33:02+0530] ERROR - Encrypted: GOOGLE_LOGIN_ERROR: module 'jwt' has no attribute 'encode'
+[2025-10-22 22:35:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-22 22:35:35+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256
+[2025-10-23 13:50:04+0530] WARNING - Encrypted: GOOGLE_TOKEN_INVALID: Unsupported signature algorithm HS256

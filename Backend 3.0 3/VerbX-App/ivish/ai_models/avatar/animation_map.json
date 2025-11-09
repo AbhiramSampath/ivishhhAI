@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "_security": {
+    "signature": "AES256-RSA-SIGNED@IVISH:v1.1",
+    "last_verified": "2025-07-18T00:00:00Z",
+    "checksum": "sha3-384:abc123...def456",
+    "integrity_lock": true,
+    "tamper_response": {
+      "action": "auto_wipe_and_blackhole",
+      "blockchain_report": true
+    }
+  },
+  "default": {
+    "animation_file": "neutral_idle.glb",
+    "audio_sync": true,
+    "loop": true,
+    "intensity_range": [0.0, 1.0],
+    "_security": {
+      "hash": "sha3-256:neutral_idle_hash",
+      "allowed_origins": [" https://frontend.verbx.ai ", "http://localhost:3000"],
+      "preload": true
+    }
+  },
+  "emotions": {
+    "happy": {
+      "animation_file": "smile_idle_v2.glb",
+      "audio_sync": true,
+      "loop": true,
+      "intensity_range": [0.6, 1.0],
+      "fallback": "default",
+      "transition_time_ms": 200,
+      "_security": {
+        "requires_auth": true,
+        "max_trigger_rate": "5/min",
+        "device_fingerprint_required": true
+      },
+      "_performance": {
+        "preload": true,
+        "memory_cache": true
+      }
+    },
+    "excited": {
+      "animation_file": "jump_wave_optimized.glb",
+      "audio_sync": true,
+      "loop": false,
+      "intensity_range": [0.8, 1.0],
+      "cooldown_ms": 1000,
+      "_performance": {
+        "preload": true,
+        "gpu_priority": "high"
+      },
+      "_security": {
+        "honeypot": "excited_fake.glb",
+        "trigger_blackhole_on_abuse": true
+      }
+    },
+    "sad": {
+      "animation_file": "frown_look_down_rigged.glb",
+      "audio_sync": true,
+      "loop": false,
+      "intensity_range": [0.5, 1.0],
+      "blend_shape_weights": {
+        "brow_down": 0.7,
+        "mouth_frown": 0.9
+      },
+      "_security": {
+        "max_trigger_rate": "3/min"
+      }
+    },
+    "angry": {
+      "animation_file": "arms_crossed_secure.glb",
+      "audio_sync": false,
+      "loop": false,
+      "intensity_range": [0.7, 1.0],
+      "_security": {
+        "sensitive": true,
+        "require_voiceprint": true,
+        "honeypot": "angry_fake.glb",
+        "blockchain_log": true
+      }
+    }
+  },
+  "contextual": {
+    "thinking": {
+      "animation_file": "hand_chin_loop_optimized.glb",
+      "audio_sync": false,
+      "loop": true,
+      "_performance": {
+        "memory_cache": true,
+        "priority": "high"
+      },
+      "_security": {
+        "device_fingerprint_required": true
+      }
+    },
+    "error": {
+      "animation_file": "shrug_loop_secure.glb",
+      "audio_sync": false,
+      "loop": true,
+      "_security": {
+        "honeypot": "error_fake.glb",
+        "trigger_blackhole_on_abuse": true,
+        "blockchain_log": true
+      }
+    },
+    "goodbye": {
+      "animation_file": "wave_exit.glb",
+      "audio_sync": false,
+      "loop": false,
+      "_security": {
+        "session_end": true,
+        "auto_wipe": true
+      }
+    },
+    "continue": {
+      "animation_file": "nod_continue.glb",
+      "audio_sync": false,
+      "loop": false,
+      "transition_time_ms": 150,
+      "_performance": {
+        "preload": true
+      },
+      "_security": {
+        "max_trigger_rate": "10/min"
+      }
+    },
+    "end": {
+      "animation_file": "bow_end.glb",
+      "audio_sync": false,
+      "loop": false,
+      "transition_time_ms": 250,
+      "_performance": {
+        "preload": true
+      },
+      "_security": {
+        "session_end": true,
+        "auto_wipe": true
+      }
+    }
+  },
+  "_system": {
+    "version": "2.4",
+    "strict_validation": true,
+    "auto_wipe": {
+      "after_inactivity_min": 30,
+      "on_tamper": true
+    },
+    "blockchain_audit": {
+      "enabled": true,
+      "network": "solana",
+      "log_on": ["emotion_trigger", "tamper", "session_end"]
+    },
+    "reverse_intrusion_defense": {
+      "enabled": true,
+      "blackhole_on": ["fuzz", "port_scan", "abuse"],
+      "endpoint_rotation": true
+    },
+    "performance": {
+      "max_load_time_ms": 150,
+      "min_render_fps": 30
+    }
+  }
+}

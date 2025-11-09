@@ -1,0 +1,79 @@
+global:
+  scrape_interval: 15s          # Frequency to scrape metrics
+  scrape_timeout: 10s           # Timeout per scrape
+  evaluation_interval: 15s      # Alert rule evaluation
+
+  external_labels:
+    app: ivish-ai
+    environment: production
+
+# Alertmanager config (assumes you deploy it)
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - 'localhost:9093'  # Update if Alertmanager is remote
+
+rule_files:
+  - 'alert_rules.yml'           # External file for alerts (optional)
+
+scrape_configs:
+
+  # Monitor Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Monitor FastAPI backend
+  - job_name: 'fastapi-backend'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['backend-app:8000']
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+        regex: '(.*):.*'
+        replacement: '${1}'
+      - source_labels: [__metrics_path__]
+        target_label: job
+        replacement: 'fastapi'
+
+  # STT/TTS Model Monitors (e.g., Whisper, Coqui)
+  - job_name: 'ai-models'
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+          - 'whisper-model:8501'
+          - 'coqui-tts:8600'
+          - 'sarvam-nmt:8700'
+    scheme: http
+
+  # Redis monitoring
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis:9121']
+
+  # Docker node-exporter (system metrics)
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # AutoCoder activity monitoring (custom metrics)
+  - job_name: 'autocoder'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['autocoder:8800']
+
+  # Federated learning nodes
+  - job_name: 'federated-nodes'
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+          - 'edge-device-1:8100'
+          - 'edge-device-2:8101'
+
+  # Firewall / Threat Detection
+  - job_name: 'security-monitor'
+    metrics_path: /metrics
+    static_configs:
+      - targets: ['firewall:8500', 'threat-detector:8502']

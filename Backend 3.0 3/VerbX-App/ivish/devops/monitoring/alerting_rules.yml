@@ -1,0 +1,104 @@
+groups:
+  - name: VerbX-Application-Alerts
+    rules:
+
+      - alert: HighLatencyDetected
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 0.8
+        for: 1m
+        labels:
+          severity: warning
+          type: latency
+        annotations:
+          summary: "High API latency detected"
+          description: "95th percentile latency is above 800ms for the past 5 minutes."
+
+      - alert: APIErrorRateSpike
+        expr: increase(http_requests_total{status=~"5.."}[3m]) > 10
+        for: 2m
+        labels:
+          severity: critical
+          type: application
+        annotations:
+          summary: "Spike in API 5xx errors"
+          description: "More than 10 5xx errors in 3 minutes — potential API instability."
+
+      - alert: MemoryUsageCritical
+        expr: node_memory_Active_bytes / node_memory_MemTotal_bytes > 0.9
+        for: 1m
+        labels:
+          severity: critical
+          type: infrastructure
+        annotations:
+          summary: "Memory usage critically high"
+          description: "Active memory usage is above 90%."
+
+      - alert: CPULoadSpike
+        expr: 100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[2m])) * 100) > 85
+        for: 2m
+        labels:
+          severity: warning
+          type: infrastructure
+        annotations:
+          summary: "CPU usage spike detected"
+          description: "CPU usage is consistently over 85%."
+
+      - alert: ModelInferenceFailure
+        expr: increase(model_inference_failures_total[5m]) > 1
+        for: 30s
+        labels:
+          severity: high
+          type: ai-model
+        annotations:
+          summary: "Model inference failure"
+          description: "AI model inference failed more than once in last 5 minutes."
+
+      - alert: GPUOverheat
+        expr: nvidia_smi_temperature_gpu > 85
+        for: 30s
+        labels:
+          severity: critical
+          type: hardware
+        annotations:
+          summary: "GPU temperature too high"
+          description: "GPU temperature exceeded 85°C. Risk of performance degradation."
+
+      - alert: SecurityAnomalyTrafficSurge
+        expr: increase(request_count{label="anomaly_detected"}[2m]) > 5
+        for: 1m
+        labels:
+          severity: critical
+          type: security
+        annotations:
+          summary: "Security anomaly — traffic surge"
+          description: "Detected repeated security anomalies in short time window."
+
+      - alert: RedisCacheMissRate
+        expr: (rate(redis_cmd_total{cmd="get"}[5m]) - rate(redis_cmd_hits_total[5m])) / rate(redis_cmd_total{cmd="get"}[5m]) > 0.3
+        for: 2m
+        labels:
+          severity: warning
+          type: performance
+        annotations:
+          summary: "Redis cache miss rate > 30%"
+          description: "Too many cache misses may increase backend load."
+
+      - alert: EndpointMutationTriggered
+        expr: increase(endpoint_rotations_total[5m]) > 2
+        for: 30s
+        labels:
+          severity: info
+          type: defensive
+        annotations:
+          summary: "Endpoint rotated due to breach attempt"
+          description: "AI-based firewall triggered endpoint rotation more than twice in 5 minutes."
+
+      - alert: OfflineModelFallbackUsed
+        expr: increase(offline_model_activations_total[10m]) > 3
+        for: 5m
+        labels:
+          severity: notice
+          type: ai-performance
+        annotations:
+          summary: "Offline model fallback triggered"
+          description: "Using Whisper.cpp/Sarvam instead of GPT/Whisper API due to latency or pricing."
+

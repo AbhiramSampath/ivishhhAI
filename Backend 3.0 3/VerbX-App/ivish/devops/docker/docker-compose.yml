@@ -1,0 +1,94 @@
+version: '3.9'
+
+services:
+
+  api:
+    container_name: verbx_api
+    build:
+      context: ../../backend
+      dockerfile: Dockerfile
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ../../backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+      - REDIS_URL=redis://redis:6379
+      - MONGO_URL=mongodb://mongo:27017
+    depends_on:
+      - redis
+      - mongo
+    networks:
+      - verbx-net
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    container_name: redis
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - verbx-net
+    restart: always
+
+  mongo:
+    container_name: mongo
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - verbx-net
+    restart: always
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - api
+    networks:
+      - verbx-net
+    restart: always
+
+  model_loader:
+    container_name: edge_models
+    build:
+      context: ../../offline_engine
+      dockerfile: Dockerfile
+    environment:
+      - USE_GPU=true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    networks:
+      - verbx-net
+    restart: always
+    depends_on:
+      - api
+
+volumes:
+  redis-data:
+  mongo-data:
+
+networks:
+  verbx-net:
+    driver: bridge

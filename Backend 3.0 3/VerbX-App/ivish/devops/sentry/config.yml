@@ -1,0 +1,94 @@
+# devops/sentry/config.yml
+
+defaults:
+  environment: production
+  sampleRate: 1.0                  # 100% capture, adjust to 0.2 (20%) in prod if needed
+  tracesSampleRate: 0.75           # Performance monitoring
+  profilesSampleRate: 1.0          # Profiling
+  sendDefaultPii: false            # Disable personal data by default
+  attachStacktrace: true
+  maxBreadcrumbs: 100              # Track up to 100 events
+  debug: false
+
+environments:
+  development:
+    dsn: https://<DEV_KEY>@o0.ingest.sentry.io/0000000
+    tracesSampleRate: 1.0
+    debug: true
+    environment: development
+    sendDefaultPii: true
+    release: ivish-dev@%GIT_COMMIT_SHA%
+    enableSourceMaps: true
+    enableProfiling: true
+
+  staging:
+    dsn: https://<STAGING_KEY>@o0.ingest.sentry.io/0000000
+    tracesSampleRate: 0.75
+    environment: staging
+    release: ivish-staging@%GIT_COMMIT_SHA%
+
+  production:
+    dsn: https://<PROD_KEY>@o0.ingest.sentry.io/0000000
+    tracesSampleRate: 0.5
+    environment: production
+    release: ivish-prod@%GIT_COMMIT_SHA%
+    ignoreErrors:
+      - NotFoundException
+      - TimeoutError
+    denyUrls:
+      - .*google-analytics\.com.*
+      - .*sentry\.io.*
+
+logging:
+  level: error
+  integrations:
+    - sentry_sdk.integrations.logging.LoggingIntegration
+    - sentry_sdk.integrations.asgi.SentryAsgiMiddleware
+    - sentry_sdk.integrations.redis.RedisIntegration
+    - sentry_sdk.integrations.fastapi.FastApiIntegration
+
+performance:
+  autoSessionTracking: true
+  idleTimeout: 3000  # in ms
+  responseTimeThreshold: 1000  # in ms
+
+anonymization:
+  sanitizeFieldNames:
+    - password
+    - authorization
+    - access_token
+    - refresh_token
+    - session_id
+  scrubIpAddresses: true
+
+tags:
+  app: ivish
+  layer: backend
+  team: ai-ops
+
+release_monitoring:
+  enabled: true
+  notify_on_release: true
+  deploy_tag_from: git
+
+alert_rules:
+  - name: High Latency (>2s)
+    condition: response.time > 2000
+    action: email
+    notify: devops@verbx.ai
+
+  - name: Exception Spike
+    condition: error.count > 10 in 5m
+    action: Slack
+    webhook: https://hooks.slack.com/services/...
+
+  - name: AI Security Breach Detected
+    condition: tags.security == 'anomaly'
+    action: run_script
+    script: /security/auto_isolate.sh
+
+ci_cd:
+  github_actions:
+    releases:
+      include_commits: true
+      source: .github/workflows/deploy.yml

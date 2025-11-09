@@ -1,0 +1,44 @@
+{
+  "license": "0BSD",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/slider": "^5.0.1",
+    "@react-navigation/native": "^7.1.17",
+    "@react-navigation/native-stack": "*",
+    "@react-navigation/stack": "^7.4.8",
+    "expo": "~53.0.23",
+    "expo-auth-session": "^6.2.1",
+    "expo-constants": "^18.0.9",
+    "expo-image-picker": "~16.1.4",
+    "expo-status-bar": "~2.2.3",
+    "expo-web-browser": "^15.0.8",
+    "graceful-fs": "^4.2.11",
+    "lucide-react-native": "*",
+    "metro-resolver": "^0.83.3",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.4",
+    "react-native-paper": "4.9.2",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screens": "~4.11.1",
+    "react-native-svg": "15.11.2",
+    "react-native-vector-icons": "*",
+    "react-native-web": "^0.20.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true,
+  "name": "frontend",
+  "version": "1.0.0"
+}

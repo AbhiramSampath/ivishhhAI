@@ -1,0 +1,93 @@
+{
+  "uid": "ivish-monitoring",
+  "title": "Ivish AI Monitoring Dashboard",
+  "timezone": "browser",
+  "editable": true,
+  "panels": [
+    {
+      "title": "STT → GPT → TTS Latency (ms)",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 6 },
+      "targets": [
+        { "expr": "ivish_latency_pipeline_total", "legendFormat": "{{stage}}", "refId": "A" }
+      ]
+    },
+    {
+      "title": "API Calls (GPT vs Open Source)",
+      "type": "piechart",
+      "gridPos": { "x": 12, "y": 0, "w": 12, "h": 6 },
+      "targets": [
+        { "expr": "sum by (model) (rate(ivish_api_usage_total[1m]))", "legendFormat": "{{model}}", "refId": "B" }
+      ]
+    },
+    {
+      "title": "Auth Events (ZKP, Biometric)",
+      "type": "bargauge",
+      "gridPos": { "x": 0, "y": 6, "w": 12, "h": 6 },
+      "targets": [
+        { "expr": "rate(ivish_auth_events_total[1m])", "legendFormat": "{{auth_type}}", "refId": "C" }
+      ]
+    },
+    {
+      "title": "Edge vs Cloud Model Usage (%)",
+      "type": "gauge",
+      "gridPos": { "x": 12, "y": 6, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "ivish_model_usage_ratio", "refId": "D" }
+      ]
+    },
+    {
+      "title": "Autocoder Trigger Count",
+      "type": "stat",
+      "gridPos": { "x": 18, "y": 6, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "rate(autocoder_trigger_total[5m])", "refId": "E" }
+      ]
+    },
+    {
+      "title": "Emotion Detector Accuracy (%)",
+      "type": "stat",
+      "gridPos": { "x": 0, "y": 12, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "ivish_emotion_accuracy", "refId": "F" }
+      ]
+    },
+    {
+      "title": "Firewall Blocks (Per Minute)",
+      "type": "graph",
+      "gridPos": { "x": 6, "y": 12, "w": 12, "h": 6 },
+      "targets": [
+        { "expr": "rate(ivish_firewall_blocked_requests_total[1m])", "refId": "G" }
+      ]
+    },
+    {
+      "title": "Redis Cache Hit Rate (%)",
+      "type": "gauge",
+      "gridPos": { "x": 0, "y": 18, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "(ivish_redis_hits_total / (ivish_redis_hits_total + ivish_redis_misses_total)) * 100", "refId": "H" }
+      ]
+    },
+    {
+      "title": "Wake Word Recognition Success Rate",
+      "type": "stat",
+      "gridPos": { "x": 6, "y": 18, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "ivish_wakeword_success_rate", "refId": "I" }
+      ]
+    },
+    {
+      "title": "Active Sessions",
+      "type": "stat",
+      "gridPos": { "x": 12, "y": 18, "w": 6, "h": 6 },
+      "targets": [
+        { "expr": "ivish_active_sessions", "refId": "J" }
+      ]
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 37,
+  "version": 1,
+  "templating": { "list": [] },
+  "time": { "from": "now-6h", "to": "now" }
+}

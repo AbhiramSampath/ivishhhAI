@@ -1,0 +1,142 @@
+{
+  "id": null,
+  "uid": "verbx-performance",
+  "title": "VerbX AI - Ivish Performance Dashboard",
+  "timezone": "browser",
+  "schemaVersion": 36,
+  "version": 1,
+  "refresh": "10s",
+  "tags": ["ivish", "performance", "ai", "security"],
+  "panels": [
+    {
+      "type": "row",
+      "title": "System Overview",
+      "gridPos": { "x": 0, "y": 0, "w": 24, "h": 1 },
+      "collapsed": false,
+      "panels": []
+    },
+    {
+      "title": "CPU Usage",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "100 - (avg by (instance) (irate(node_cpu_seconds_total{mode=\"idle\"}[1m])) * 100)",
+          "legendFormat": "{{instance}}",
+          "interval": ""
+        }
+      ],
+      "gridPos": { "x": 0, "y": 1, "w": 12, "h": 8 }
+    },
+    {
+      "title": "Memory Usage",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "(node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) / node_memory_MemTotal_bytes * 100",
+          "legendFormat": "Memory Usage",
+          "interval": ""
+        }
+      ],
+      "gridPos": { "x": 12, "y": 1, "w": 12, "h": 8 }
+    },
+    {
+      "title": "Latency (API & AI)",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "avg_over_time(verbx_ai_latency_ms[1m])",
+          "legendFormat": "Avg Latency",
+          "interval": ""
+        }
+      ],
+      "gridPos": { "x": 0, "y": 9, "w": 12, "h": 8 }
+    },
+    {
+      "title": "GPU Usage (%)",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "avg(nvidia_smi_utilization_gpu)",
+          "legendFormat": "GPU Utilization",
+          "interval": ""
+        }
+      ],
+      "gridPos": { "x": 12, "y": 9, "w": 12, "h": 8 }
+    },
+    {
+      "title": "Redis Cache Hit Rate",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(redis_commands_processed_total{command=\"get\"}[5m]) / rate(redis_commands_total[5m]) * 100",
+          "legendFormat": "Cache Hit %",
+          "interval": ""
+        }
+      ],
+      "gridPos": { "x": 0, "y": 17, "w": 12, "h": 8 }
+    },
+    {
+      "title": "STT + TTS Call Count",
+      "type": "timeseries",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum(rate(verbx_stt_calls_total[1m]))",
+          "legendFormat": "STT Calls"
+        },
+        {
+          "expr": "sum(rate(verbx_tts_calls_total[1m]))",
+          "legendFormat": "TTS Calls"
+        }
+      ],
+      "gridPos": { "x": 12, "y": 17, "w": 12, "h": 8 }
+    },
+    {
+      "title": "Security: Firewall Events",
+      "type": "logs",
+      "datasource": "Loki",
+      "targets": [
+        {
+          "expr": "{job=\"firewall\"} |= \"ALERT\""
+        }
+      ],
+      "gridPos": { "x": 0, "y": 25, "w": 24, "h": 10 }
+    },
+    {
+      "title": "AI Model Load % (Edge vs Cloud)",
+      "type": "piechart",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "avg by (type) (verbx_model_load_ratio)",
+          "legendFormat": "{{type}}"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 35, "w": 12, "h": 8 }
+    },
+    {
+      "title": "Intrusion Attempts Blocked",
+      "type": "stat",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "increase(verbx_intrusions_blocked_total[1h])",
+          "legendFormat": "Blocked"
+        }
+      ],
+      "gridPos": { "x": 12, "y": 35, "w": 12, "h": 8 }
+    }
+  ],
+  "templating": {
+    "list": []
+  },
+  "annotations": {
+    "list": []
+  },
+  "editable": true
+}

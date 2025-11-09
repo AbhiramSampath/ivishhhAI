@@ -1,0 +1,9 @@
+[2025-10-19 11:10:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined

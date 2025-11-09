@@ -1,0 +1,269 @@
+[2025-10-19 11:10:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-19 11:11:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-19 11:11:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:55:43+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:55:43+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    if not self._verify_log_signature(f"{log_entry.get('id')}|{message}", log_entry.get('signature', '')):
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return constant_time_compare(expected, signature)
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:23+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:23+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:48+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:56:48+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:15+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:15+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:57:36+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:58:17+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:58:17+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:08+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:08+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:27+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:27+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:47+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 19:59:47+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:24+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:24+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:52+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:00:52+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:01:32+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:01:32+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:13+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:13+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    """SECURE log verification with constant-time compare"""
+           ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:02:53+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:03:20+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined
+[2025-10-22 20:03:20+0530] ERROR - Log processor failed: name 'constant_time_compare' is not defined
+Traceback (most recent call last):
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 94, in _process_log_queue
+    # Check for HMAC signature
+  File "/Users/abhiramsampath/Desktop/Integrated_Box/Backend 3.0 3/VerbX-App/ivish/backend/app/utils/logger.py", line 173, in _verify_log_signature
+    return ""
+       ^^^^^^
+NameError: name 'constant_time_compare' is not defined

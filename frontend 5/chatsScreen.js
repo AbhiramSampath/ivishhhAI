@@ -131,9 +131,23 @@ export default function ChatList() {
               indicatorStyle="black"
               contentContainerStyle={styles.listContent}
             />
-          ) : (
+          ) : searchQuery.length > 0 ? (
             <View style={styles.noResults}>
               <Text style={styles.noResultsText}>No matches found for "{searchQuery}"</Text>
+            </View>
+          ) : (
+            <View style={styles.emptyState}>
+              <Text style={styles.emptyStateTitle}>No chats yet</Text>
+              <Text style={styles.emptyStateSubtitle}>
+                Start connecting with people around the world
+              </Text>
+              <TouchableOpacity
+                style={styles.addContactsButton}
+                onPress={() => navigation.navigate('SelectContacts')}
+              >
+                <Feather name="user-plus" size={20} color="#000" />
+                <Text style={styles.addContactsButtonText}>Add Contacts</Text>
+              </TouchableOpacity>
             </View>
           )}
         </View>
@@ -192,7 +206,7 @@ const styles = StyleSheet.create({
     marginBottom: 6,
   },
   highlighted: {
-    backgroundColor: '#f89d28',
+    backgroundColor: '#FFA364',
   },
   avatar: {
     width: 42,
@@ -225,5 +239,39 @@ const styles = StyleSheet.create({
   noResultsText: {
     color: '#ccc',
     fontSize: 16,
+  },
+  emptyState: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 40,
+  },
+  emptyStateTitle: {
+    fontSize: 24,
+    fontWeight: '600',
+    color: '#fff',
+    marginBottom: 8,
+    textAlign: 'center',
+  },
+  emptyStateSubtitle: {
+    fontSize: 16,
+    color: '#ccc',
+    marginBottom: 32,
+    textAlign: 'center',
+    lineHeight: 24,
+  },
+  addContactsButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFA364',
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 24,
+  },
+  addContactsButtonText: {
+    color: '#000',
+    fontSize: 16,
+    fontWeight: '600',
+    marginLeft: 8,
   },
 });

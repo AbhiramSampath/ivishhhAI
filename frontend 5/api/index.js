@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_BASE_URL = "http://localhost:8000";
+const API_BASE_URL = "http://10.0.2.2:8000";
 
 // Token management
 async function getAccessToken() {
@@ -359,6 +359,27 @@ async function createAvatar(userId, voiceStyle, voiceSample = null) {
   return data;
 }
 
+// Update avatar API function
+async function updateAvatar(userId, avatarUrl) {
+  const token = await getAccessToken();
+  const response = await fetchWithRetry(`${API_BASE_URL}/user/update-avatar`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": token ? `Bearer ${token}` : "",
+    },
+    body: JSON.stringify({
+      user_id: userId,
+      avatar_url: avatarUrl,
+      device_fingerprint: generateDeviceFingerprint(),
+      zkp_proof: generateZKPProof(),
+      session_token: "dummy_session_token_1234567890123456789012345678901234567890123456789012345678901234567890",
+    }),
+  });
+  const data = await response.json();
+  return data;
+}
+
 // FAQ API function
 async function getFAQs() {
   const token = await getAccessToken();
@@ -592,6 +613,25 @@ async function getOpenSourceLicenses() {
   return data;
 }
 
+// Check if user exists on VerbX API function
+async function checkUserExists(phoneNumber) {
+  const token = await getAccessToken();
+  const response = await fetchWithRetry(`${API_BASE_URL}/user/check-exists`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": token ? `Bearer ${token}` : "",
+    },
+    body: JSON.stringify({
+      phone_number: phoneNumber,
+      device_fingerprint: generateDeviceFingerprint(),
+      zkp_proof: generateZKPProof(),
+    }),
+  });
+  const data = await response.json();
+  return data.exists;
+}
+
 // Add more API functions as needed for other backend routes
 
-export { translateText, getPhrasebook, sendMessage, processVoiceChat, regenerateDID, exportPrivateKey, changePassword, switchLanguage, getUserDetails, updateVoiceAuth, fetchLanguages, updateUserLanguage, uploadVoiceSample, verifyVoiceSample, saveBackupPin, createAvatar, getFAQs, submitFeedback, linkAccount, unlinkAccount, login, register, completeOnboarding, getPersonalization, updateMemory, updatePrompt, getLanguageTest, resetLanguageTest, getOpenSourceLicenses };
+export { translateText, getPhrasebook, sendMessage, processVoiceChat, regenerateDID, exportPrivateKey, changePassword, switchLanguage, getUserDetails, updateVoiceAuth, fetchLanguages, updateUserLanguage, uploadVoiceSample, verifyVoiceSample, saveBackupPin, createAvatar, updateAvatar, getFAQs, submitFeedback, linkAccount, unlinkAccount, login, register, completeOnboarding, getPersonalization, updateMemory, updatePrompt, getLanguageTest, resetLanguageTest, getOpenSourceLicenses, checkUserExists };

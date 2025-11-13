@@ -32,6 +32,7 @@ import BlockchainScreen from './Blockchain.js';
 import VoiceBiometrics from './VoiceBiometrics';
 import Opensource from './Opensource';
 import Personalisation from './Personalization';
+import SelectContactsScreen from './SelectContactsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -78,6 +79,7 @@ export default function App() {
         <Stack.Screen name="VoiceBiometrics" component={VoiceBiometrics} />
         <Stack.Screen name="Opensource" component={Opensource} />
         <Stack.Screen name="Personalisation" component={Personalisation} />
+        <Stack.Screen name="SelectContacts" component={SelectContactsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

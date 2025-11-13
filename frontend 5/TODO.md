@@ -1,6 +1,27 @@
-# TODO: Fix Expo Doctor Issues
+# TODO: Implement Add Contacts Functionality
 
-- [x] Remove .expo directory from Git tracking using `git rm --cached -r .expo` (No .expo files were in the index)
-- [x] Run `expo prebuild` to sync native configurations from app.json
-- [x] Run `npx expo-doctor` to verify issues are resolved (Still failing)
-- [ ] Test the app to ensure it works after changes
+## Completed Tasks
+- [x] Install expo-contacts and expo-sms packages
+- [x] Add checkUserExists API function to api/index.js
+- [x] Create SelectContactsScreen.js with contact selection, VerbX user checking, and invite functionality
+- [x] Add SelectContactsScreen to App.js navigation
+- [x] Update chatsScreen.js to show "Add Contacts" button when no chats exist
+
+## Remaining Tasks
+- [ ] Test contact permissions and access
+- [ ] Test WhatsApp and SMS invite functionality
+- [ ] Test navigation between screens
+- [ ] Verify API integration for user existence checks
+- [ ] Test empty state UI in chat list
+
+## Testing Checklist
+- [ ] Grant contacts permission when prompted
+- [ ] Verify contacts load correctly
+- [ ] Check VerbX user badges appear for existing users
+- [ ] Test invite options for non-VerbX users
+- [ ] Verify WhatsApp invite opens WhatsApp with correct message
+- [ ] Verify SMS invite opens SMS app with correct message
+- [ ] Test navigation back from SelectContactsScreen
+- [ ] Test starting chat with VerbX users
+- [ ] Verify empty state shows when no chats and no search query
+- [ ] Verify search functionality works in both screens

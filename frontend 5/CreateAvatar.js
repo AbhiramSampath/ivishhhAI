@@ -37,7 +37,9 @@ const AIPersonaOnboarding = () => {
       createAvatar("dummy_user_token_1234567890", selectedVoiceStyle)
         .then(response => {
           if (response.success) {
-            Alert.alert('Setup Complete!', 'Your AI Persona has been created successfully.');
+            Alert.alert('Setup Complete!', 'Your AI Persona has been created successfully.', [
+              { text: 'OK', onPress: () => navigation.navigate('Home') }
+            ]);
           } else {
             Alert.alert('Error', 'Failed to create AI Persona.');
           }
@@ -127,8 +129,8 @@ const AIPersonaOnboarding = () => {
   const renderRecordVoiceScreen = () => (
     <View style={styles.screenContainer}>
       {/* Back Button */}
-      <TouchableOpacity 
-        style={styles.backButton} 
+      <TouchableOpacity
+        style={styles.backButton}
         onPress={() => navigation.navigate('Home')}
       >
         <Svg width={24} height={24} viewBox="0 0 24 24" fill="none">
@@ -143,8 +145,8 @@ const AIPersonaOnboarding = () => {
         <Text style={styles.backButtonText}>Back</Text>
       </TouchableOpacity>
 
-      <Image 
-        source={require('./assets/curve.png')} 
+      <Image
+        source={require('./assets/curve.png')}
         style={styles.curveScreen3}
         resizeMode="contain"
       />
@@ -158,14 +160,18 @@ const AIPersonaOnboarding = () => {
           <TouchableOpacity
             style={styles.micButton}
             onPress={handleRecordPress}>
-            <Image 
-              source={require('./assets/Mic.png')} 
+            <Image
+              source={require('./assets/Mic.png')}
               style={styles.micImage}
               resizeMode="contain"
             />
           </TouchableOpacity>
         </View>
       </View>
+
+      <TouchableOpacity style={styles.nextButton} onPress={handleNext}>
+        <Text style={styles.nextButtonText}>Create Avatar</Text>
+      </TouchableOpacity>
     </View>
   );
 

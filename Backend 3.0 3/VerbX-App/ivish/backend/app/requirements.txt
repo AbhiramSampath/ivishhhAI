@@ -50,7 +50,7 @@ python-jose==3.3.0  # JWT/JSON Web Keys
 # 🛡️ BLOCKCHAIN & ZKP
 web3==6.17.0  # Ethereum compatibility
 eth-utils>=5.0.0  # Ethereum utilities
-pymerkletools==1.0.3  # Merkle proofs
+merkletools==1.0.3  # Merkle proofs
 # zkp @ git+https://github.com/ivish-ai/zkp-proofs.git@v1.2.0  # Custom ZKP
 
 # 🗄️ DATABASES & CACHE
